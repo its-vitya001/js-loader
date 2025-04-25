@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #f4f4f4;
+  overflow: hidden;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+canvas {
+  animation-name: rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
